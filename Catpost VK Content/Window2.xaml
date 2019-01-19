@@ -1,0 +1,21 @@
+﻿<Window x:Class="Catpost_VK_Content.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Catpost_VK_Content"
+        mc:Ignorable="d"
+        Title="Сортировка постов" Height="232.151" Width="300" ResizeMode="NoResize" Closing="Window_Closing">
+    <Grid>
+        <StackPanel Height="200" VerticalAlignment="Top" Background="#FFB9DEB8" >
+            <Label Content="Настройки сортировки постов" FontSize="18" />
+            <RadioButton x:Name="date_new_sort" Content="По дате - новое вначале" IsChecked="True" Checked="date_new_sort_Checked"/>
+            <RadioButton x:Name="data_old_sort" Content="По дате - старое вначале" Checked="data_old_sort_Checked"/>
+            <RadioButton x:Name="likes_sort" Content="По лайкам" Checked="likes_sort_Checked"/>
+            <RadioButton x:Name="reposts_sort" Content="По репостам" Checked="reposts_sort_Checked"/>
+            <RadioButton x:Name="views_sort" Content="По просмотрам" Checked="views_sort_Checked"/>
+            <RadioButton x:Name="likes_reposts_views_sort" Content="По лайкам, репостам, просмотрам" Checked="likes_reposts_views_sort_Checked"/>
+            <RadioButton x:Name="add_sort" Content="Без сортировки, как добавлено в базу данных" Checked="add_sort_Checked"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,44 @@
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\Catpost VK Content.exe.config
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\Catpost VK Content.exe
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\Catpost VK Content.pdb
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\MySql.Data.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\Newtonsoft.Json.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\WpfAnimatedGif.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\Xceed.Wpf.AvalonDock.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\Xceed.Wpf.DataGrid.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\Xceed.Wpf.Toolkit.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\Newtonsoft.Json.xml
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\WpfAnimatedGif.xml
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\bin\Release\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\MainWindow.g.cs
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Window1.g.cs
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Window2.g.cs
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Window3.g.cs
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Window4.g.cs
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Window5.g.cs
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\App.g.cs
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Catpost VK Content_MarkupCompile.cache
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Catpost VK Content_MarkupCompile.lref
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\MainWindow.baml
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Window1.baml
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Window2.baml
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Window3.baml
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Window4.baml
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Window5.baml
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Catpost VK Content.g.resources
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Catpost_VK_Content.Properties.Resources.resources
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Catpost VK Content.csproj.GenerateResource.Cache
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Catpost VK Content.exe
+C:\Users\Виктор\documents\visual studio 2015\Projects\Catpost VK Content\Catpost VK Content\obj\Release\Catpost VK Content.pdb

@@ -1,0 +1,318 @@
+﻿<Window x:Class="Catpost_VK_Content.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Catpost_VK_Content"
+        mc:Ignorable="d"
+        Title="Catpost VK Content 3.2" MinHeight="500" MinWidth="1000" KeyDown="Window_KeyDown" Closed="Window_Closed" >
+    <Window.Resources>
+        <SolidColorBrush x:Key="WhiteBrush" Color="White"/>
+
+        <!-- Fill Brushes -->
+
+        <LinearGradientBrush x:Key="NormalBrush" StartPoint="0,0" EndPoint="0,1">
+            <GradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#FFF" Offset="0.0"/>
+                    <GradientStop Color="#CCC" Offset="1.0"/>
+                </GradientStopCollection>
+            </GradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="HorizontalNormalBrush" StartPoint="0,0" EndPoint="1,0">
+            <GradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#FFF" Offset="0.0"/>
+                    <GradientStop Color="#CCC" Offset="1.0"/>
+                </GradientStopCollection>
+            </GradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="LightBrush" StartPoint="0,0" EndPoint="0,1">
+            <GradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#FFF" Offset="0.0"/>
+                    <GradientStop Color="#EEE" Offset="1.0"/>
+                </GradientStopCollection>
+            </GradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="HorizontalLightBrush" StartPoint="0,0" EndPoint="1,0">
+            <GradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#FFF" Offset="0.0"/>
+                    <GradientStop Color="#EEE" Offset="1.0"/>
+                </GradientStopCollection>
+            </GradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="DarkBrush" StartPoint="0,0" EndPoint="0,1">
+            <GradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#FFF" Offset="0.0"/>
+                    <GradientStop Color="#AAA" Offset="1.0"/>
+                </GradientStopCollection>
+            </GradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="PressedBrush" StartPoint="0,0" EndPoint="0,1">
+            <GradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#BBB" Offset="0.0"/>
+                    <GradientStop Color="#EEE" Offset="0.1"/>
+                    <GradientStop Color="#EEE" Offset="0.9"/>
+                    <GradientStop Color="#FFF" Offset="1.0"/>
+                </GradientStopCollection>
+            </GradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <SolidColorBrush x:Key="DisabledForegroundBrush" Color="#888" />
+
+        <SolidColorBrush x:Key="DisabledBackgroundBrush" Color="#EEE" />
+
+        <SolidColorBrush x:Key="WindowBackgroundBrush" Color="#FFF" />
+
+        <SolidColorBrush x:Key="SelectedBackgroundBrush" Color="#DDD" />
+
+        <!-- Border Brushes -->
+
+        <LinearGradientBrush x:Key="NormalBorderBrush" StartPoint="0,0" EndPoint="0,1">
+            <GradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#CCC" Offset="0.0"/>
+                    <GradientStop Color="#444" Offset="1.0"/>
+                </GradientStopCollection>
+            </GradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="HorizontalNormalBorderBrush" StartPoint="0,0" EndPoint="1,0">
+            <GradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#CCC" Offset="0.0"/>
+                    <GradientStop Color="#444" Offset="1.0"/>
+                </GradientStopCollection>
+            </GradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="DefaultedBorderBrush" StartPoint="0,0" EndPoint="0,1">
+            <GradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#777" Offset="0.0"/>
+                    <GradientStop Color="#000" Offset="1.0"/>
+                </GradientStopCollection>
+            </GradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="PressedBorderBrush" StartPoint="0,0" EndPoint="0,1">
+            <GradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#444" Offset="0.0"/>
+                    <GradientStop Color="#888" Offset="1.0"/>
+                </GradientStopCollection>
+            </GradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <SolidColorBrush x:Key="DisabledBorderBrush" Color="#AAA" />
+
+        <SolidColorBrush x:Key="SolidBorderBrush" Color="#888" />
+
+        <SolidColorBrush x:Key="LightBorderBrush" Color="#AAA" />
+
+        <!-- Miscellaneous Brushes -->
+        <SolidColorBrush x:Key="GlyphBrush" Color="#444" />
+
+        <SolidColorBrush x:Key="LightColorBrush" Color="#DDD" />
+
+        <Style TargetType="{x:Type TabItem}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TabItem}">
+                        <Grid>
+                            <Border 
+                                Name="Border"
+                                Margin="0,0,-4,0" 
+                                Background="{StaticResource WhiteBrush}"
+                                BorderBrush="{StaticResource  SolidBorderBrush}" 
+                                BorderThickness="1,1,1,1" 
+                                CornerRadius="2,12,0,0" >
+                                <ContentPresenter x:Name="ContentSite"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    ContentSource="Header"
+                                    Margin="12,2,12,2"
+                                    RecognizesAccessKey="True"/>
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Panel.ZIndex" Value="100" />
+                                <Setter TargetName="Border" Property="Background" Value="{StaticResource WhiteBrush}" />
+                                <Setter TargetName="Border" Property="BorderThickness" Value="1,1,1,0" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="Border" Property="Background" Value="{StaticResource DisabledBackgroundBrush}" />
+                                <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource DisabledBorderBrush}" />
+                                <Setter Property="Foreground" Value="{StaticResource DisabledForegroundBrush}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="SnapsToDevicePixels" Value="true"/>
+            <Setter Property="OverridesDefaultStyle" Value="true"/>
+            <Setter Property="MinHeight" Value="23"/>
+            <Setter Property="MinWidth" Value="75"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border 
+          x:Name="Border"  
+          CornerRadius="2" 
+          BorderThickness="1"
+          Background="{StaticResource NormalBrush}"
+          BorderBrush="{StaticResource NormalBorderBrush}">
+                            <ContentPresenter 
+            Margin="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            RecognizesAccessKey="True"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsKeyboardFocused" Value="true">
+                                <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource DefaultedBorderBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource DefaultedBorderBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter TargetName="Border" Property="Background" Value="{StaticResource DarkBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter TargetName="Border" Property="Background" Value="{StaticResource PressedBrush}" />
+                                <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource PressedBorderBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter TargetName="Border" Property="Background" Value="{StaticResource DisabledBackgroundBrush}" />
+                                <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource DisabledBorderBrush}" />
+                                <Setter Property="Foreground" Value="{StaticResource DisabledForegroundBrush}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <TabControl x:Name="tab" SelectionChanged="tab_SelectionChanged">
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal" Background="White">
+                        <TextBlock Background="White">
+                            Посты вконтакте
+                        </TextBlock>
+                        <StackPanel x:Name="stack_posts" Orientation="Horizontal" Background="White">
+
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Button x:Name="sort_button" Grid.Row="0" Content="Сортировать посты по" Width="140" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,10,0,0" Click="sort_button_Click" />
+                    <Label x:Name="sort_label" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="170,10,0,0" Content="По дате - новое вначале" />
+                    <Button x:Name="category_button" Grid.Row="0" Content="Категории" Width="60" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460,10,0,0" Click="category_button_Click" />
+                    <Button x:Name="update_button" Grid.Row="0" Content="Обновить" Width="60" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="540,10,0,0" Click="Update_button_Click" />
+                    <ComboBox x:Name="favorites" Grid.Row="0" Width="120" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="620,10,0,0" SelectionChanged="favorites_SelectionChanged" />
+                    <ScrollViewer x:Name="scroll" Grid.Row="1" Unloaded="scroll_Unloaded" Loaded="scroll_Loaded">
+                        <StackPanel x:Name="stack" Grid.Row="1" Margin="150, 0">
+                        </StackPanel>
+                    </ScrollViewer>
+                    <Button x:Name="prev" Grid.Row="2" VerticalAlignment="Bottom" Margin="20,0,0,10" Click="Button_Click_1" HorizontalAlignment="Left" IsEnabled="False" >Предыдущие посты</Button>
+                    <Button x:Name="next" Grid.Row="2" VerticalAlignment="Bottom" Margin="160,0,0,10" Click="Button_Click" HorizontalAlignment="Left" >Следующие посты</Button>
+                    <Label x:Name="posts_count_label" Grid.Row="2" Margin="300,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontWeight="Bold"></Label>
+                </Grid>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal" Background="White">
+                        <TextBlock Background="White">
+                            Новости
+                        </TextBlock>
+                        <StackPanel x:Name="stack_news" Orientation="Horizontal" Background="White">
+
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem.Header>
+                <ScrollViewer x:Name="scroll_news" Loaded="scroll_news_Loaded" Unloaded="scroll_news_Unloaded" >
+                    <StackPanel x:Name="news">
+
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal" Background="White">
+                        <TextBlock Background="White">
+                            Гороскоп
+                        </TextBlock>
+                        <StackPanel x:Name="stack_goroskope" Orientation="Horizontal" Background="White">
+
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem.Header>
+                <ScrollViewer x:Name="scroll_goroskope" Unloaded="scroll_goroskope_Unloaded" Loaded="scroll_goroskope_Loaded">
+                    <StackPanel x:Name="goroskope">
+
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal" Background="White">
+                        <TextBlock Background="White">
+                            Погода
+                        </TextBlock>
+                        <StackPanel x:Name="stack_pogoda" Orientation="Horizontal" Background="White">
+
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem.Header>
+                <ScrollViewer x:Name="scroll_pogoda">
+                    <StackPanel>
+                        <StackPanel>
+                            <Label Content="Введите название города:" HorizontalAlignment="Center"></Label>
+                            <TextBox x:Name="pogoda_text" MaxLines="1" TextWrapping="NoWrap" AcceptsReturn="False" Margin="10,20,10,0" Width="200"></TextBox>
+                            <Button x:Name="pogoda_button" Content="Загрузить" Width="80" Height="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Click="pogoda_button_Click"></Button>
+                        </StackPanel>
+                        <StackPanel x:Name="pogoda">
+
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Background="White">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal" Background="White">
+                        <TextBlock Background="White">
+                            Вокруг света
+                        </TextBlock>
+                        <StackPanel x:Name="stack_vokrug" Orientation="Horizontal" Background="White">
+
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem.Header>
+                <ScrollViewer x:Name="scroll_vokrug">
+                    <StackPanel x:Name="vokrug_sveta" Loaded="vokrug_sveta_Loaded" Unloaded="vokrug_sveta_Unloaded" >
+
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
